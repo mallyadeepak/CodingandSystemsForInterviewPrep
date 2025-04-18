@@ -1,3 +1,5 @@
+package systemstyle.cache.basics;
+
 import java.util.*;
 
 class LRUCache {
@@ -66,7 +68,6 @@ class LRUCache {
 
     public static void main(String[] args) {
         LRUCache cache = new LRUCache(2);  // Capacity = 2
-
         cache.put(1, 1); // Cache = {1=1}
         cache.put(2, 2); // Cache = {1=1, 2=2}
         System.out.println(cache.get(1)); // Returns 1, moves key 1 to front

@@ -1,4 +1,4 @@
-package systemstyle;
+package systemstyle.ratelimiter;
 
 class RateLimitException extends Exception {
     RateLimitException(String message) {

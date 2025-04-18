@@ -1,4 +1,4 @@
-package systemstyle;
+package systemstyle.ratelimiter;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

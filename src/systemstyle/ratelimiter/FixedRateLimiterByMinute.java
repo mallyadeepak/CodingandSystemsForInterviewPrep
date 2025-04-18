@@ -1,4 +1,4 @@
-package systemstyle;
+package systemstyle.ratelimiter;
 
 public class FixedRateLimiterByMinute extends SimpleRateLimiter {
 

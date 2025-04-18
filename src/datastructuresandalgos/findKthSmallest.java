@@ -1,3 +1,5 @@
+package datastructuresandalgos;
+
 import java.util.PriorityQueue;
 
 class findKthSmallest {

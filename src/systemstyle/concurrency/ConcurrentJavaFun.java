@@ -1,4 +1,4 @@
-package systemstyle;
+package systemstyle.concurrency;
 
 import java.util.List;
 import java.util.concurrent.*;
