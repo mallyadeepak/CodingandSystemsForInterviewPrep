@@ -46,7 +46,6 @@ public class GenerateParanthesis {
         if (generatedParan.length() == n) {
             result.add(generatedParan);
         } else {
-
             // I have two choices. I can extend the generatedParan by adding a ( or ), but i need to know
             // that the openSoFar >= closedSoFar to add a ), otherwise i can add only (
             if (openParSoFar < n / 2) {
