@@ -11,16 +11,7 @@ class Node {
     String key;
     Long timestampLastAccessed;
 
-    public void setKey(String key) {
-        this.key = key;
-    }
-
-    public void setTimestampLastAccessed(Long timestampLastAccessed) {
-        this.timestampLastAccessed = timestampLastAccessed;
-    }
-
     public Node(String key, Long timestampLastAccessed) {
-
 
         this.key = key;
         this.timestampLastAccessed = timestampLastAccessed;

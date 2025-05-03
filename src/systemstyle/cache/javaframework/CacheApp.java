@@ -6,7 +6,7 @@ import java.util.Map;
 public class CacheApp {
 
     public static void main(String[] args) throws InterruptedException {
-        LRUCacheImpl cache = new LRUCacheImpl(4);
+        LRUCacheImpl cache = new LRUCacheImpl(2);
         for (int i = 0; i < 10; i++) {
             String key = "key" + i;
             cache.put(key, new Node(key, System.currentTimeMillis()));
@@ -14,7 +14,7 @@ public class CacheApp {
             Thread.sleep(1000);
         }
 
-        Map<Integer, String> map = new LinkedHashMap<>(16, 0.75f, false);
+        Map<Integer, String> map = new LinkedHashMap<>(16, 0.75f, true);
         map.put(1, "A");
         map.put(2, "B");
         map.put(3, "C");
