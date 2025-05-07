@@ -1,41 +1,6 @@
-package datastructuresandalgos.basicdsa;
+package datastructuresandalgos.basicdsa.trees;
 
 import java.util.Stack;
-
-class NodeState {
-    public enum State {
-        UN_PROCESSED, PROCESSED
-    }
-
-    private Node node;
-    private State state;
-
-    public NodeState(Node node) {
-        this.node = node;
-        this.state = State.UN_PROCESSED;
-    }
-
-    public Node getNode() {
-        return node;
-    }
-
-    public State getState() {
-        return state;
-    }
-
-    public void setState(State state) {
-        this.state = state;
-    }
-}
-
-class Node {
-    int value;
-    Node left;
-    Node right;
-    public Node(int value) {
-        this.value = value;
-    }
-}
 
 public class TreeTraversals {
 

@@ -1,9 +1,9 @@
-import com.sun.source.tree.Tree;
+package datastructuresandalgos;
 
 import java.util.*;
 
 /**
- * Create a TreeNode
+ * Create a datastructuresandalgos.TreeNode
  */
 class TreeNode {
     int val;

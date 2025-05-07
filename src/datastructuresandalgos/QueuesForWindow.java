@@ -17,8 +17,8 @@ public class QueuesForWindow {
             deque.offer("a" + i);
         }
         while (!deque.isEmpty()) {
-            String str = deque.removeLast();
-            System.out.println(str);
+            String elem = deque.removeFirst();
+            System.out.println(deque);
         }
     }
 }

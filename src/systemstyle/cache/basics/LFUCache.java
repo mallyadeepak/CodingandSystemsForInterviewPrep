@@ -3,6 +3,7 @@ package systemstyle.cache.basics;
 import java.util.*;
 
 class LFUCache {
+
     private final int capacity;
     private int minFreq;
     private final Map<Integer, Node> keyToNode; // Key → Node

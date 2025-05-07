@@ -5,7 +5,9 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentLinkedDeque;
 
 /**
- * SlidiingWindow
+ * SlidingWindowRateLimiter.
+ *
+ * This keeps track of the request - so it ensures strict rate limiting but with more memory.
  */
 public class SlidingWindowRateLimiter implements RateLimiter {
 

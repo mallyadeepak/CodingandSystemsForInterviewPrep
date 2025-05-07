@@ -39,7 +39,7 @@ public class MakeSum {
         MakeSum makeSum = new MakeSum();
 
         System.out.println(
-                makeSum.getSubsetSums(Arrays.asList(11, 3, 1, 3))
+                makeSum.getSubsetSums(Arrays.asList(11, 3, 1, 3, -3, 10))
         );
         System.out.println("MaxSum = " + maxSum);
     }

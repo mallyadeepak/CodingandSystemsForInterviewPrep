@@ -45,7 +45,9 @@ class findKthSmallest {
 
     public int findKthSmallestUsingMaxHeap(int[] nums, int k) {
         // Max-heap of size k
-        PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a, b) -> b - a); // Custom comparator for max-heap
+        PriorityQueue<Integer> maxHeap = new PriorityQueue<>(
+                (a, b) -> b - a
+        ); // Custom comparator for max-heap
 
         // Process each element in the array
         for (int num : nums) {
