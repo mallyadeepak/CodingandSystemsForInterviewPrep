@@ -2,6 +2,12 @@ package datastructuresandalgos.basicdsa.trees;
 
 import java.util.Stack;
 
+/**
+ * General comment:
+ * When you are iterating a collection or a tree, you only get a pointer, root or a iterator to the collection or tree,
+ * when you are creating an Iterator implementation - it makes sense because otherwise what is the
+ * point of having an iterator!
+ */
 public class PreOrderBSTIterator implements Iterator<Node> {
 
     private Stack<Node> stack;

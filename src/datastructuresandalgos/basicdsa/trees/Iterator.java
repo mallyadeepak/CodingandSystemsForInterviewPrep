@@ -1,8 +1,10 @@
 package datastructuresandalgos.basicdsa.trees;
 
+import java.util.List;
+
 public interface Iterator<T> {
 
-    T next();
+    Object next();
 
     boolean hasNext();
 

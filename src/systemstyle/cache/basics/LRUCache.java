@@ -2,6 +2,17 @@ package systemstyle.cache.basics;
 
 import java.util.*;
 
+/**
+ * LRU Cache is a Map + DLL.
+ *
+ * The DLL maintains a head and tail dummy node. The node at the front is the most
+ * recently used, whereas at the back (tail) is the LRU.
+ *
+ * Whenever the node is accessed (put or get), it is updated,removed and added to the front of the DLL.
+ * When size hits capacity, then the node is removed from the tail and map,
+ * and new node is created and added to the front.
+ *
+ */
 class LRUCache {
     private class Node {
         int key, value;

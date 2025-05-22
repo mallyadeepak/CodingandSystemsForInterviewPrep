@@ -1,5 +1,9 @@
 package datastructuresandalgos.basicdsa;
 
+/**
+ * Basic Stack Data structure in Java with a generic Type that uses an array
+ * @param <T>
+ */
 public class Stack<T> {
 
     private Object[] arr;

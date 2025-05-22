@@ -51,6 +51,9 @@ public class LCS {
      *             LCS(s1[0..n-2], s2[0..m-1]),
      *             LCS(s1[0..n-1], s2[0..m-2])
      *         )
+     * M - Len(A), N - Len(B)
+     * Time - O(M*N)
+     * Space - O(M+N)
      * @param A
      * @param B
      * @return
@@ -65,6 +68,7 @@ public class LCS {
         if (aIndex == 0 ||  bIndex == 0) {
             return 0;
         }
+
         if (A.charAt(aIndex - 1) != B.charAt(bIndex  - 1)) {
             lcs =
                     Math.max(

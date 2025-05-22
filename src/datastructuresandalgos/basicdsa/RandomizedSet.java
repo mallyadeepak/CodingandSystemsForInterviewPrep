@@ -1,3 +1,5 @@
+package datastructuresandalgos.basicdsa;
+
 import java.util.*;
 
 public class RandomizedSet {
@@ -11,6 +13,7 @@ public class RandomizedSet {
         rand = new Random();
     }
 
+    /** O(1) time **/
     public boolean insert(int val) {
         if (valToIndex.containsKey(val)) {
             return false;
@@ -20,6 +23,13 @@ public class RandomizedSet {
         return true;
     }
 
+    /** O(1) time **/
+    // Check if the Map contains the value, if no return false
+    // Get the index of the val to remove
+    // Get the value at the lastIndex
+    // Update the value at index in the values list to the lastVal
+    // Update the index in the map for lastVal to point to index.
+    // Remove the last element: 1/ Remove last elemnnt for values list 3/ Remove val from map
     public boolean remove(int val) {
         if (!valToIndex.containsKey(val)) {
             return false;
@@ -37,6 +47,7 @@ public class RandomizedSet {
         return true;
     }
 
+    /** O(1) time **/
     public int getRandom() {
         int randomIndex = rand.nextInt(values.size());
         return values.get(randomIndex);
