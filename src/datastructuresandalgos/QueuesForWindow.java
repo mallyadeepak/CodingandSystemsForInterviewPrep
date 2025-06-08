@@ -23,10 +23,12 @@ public class QueuesForWindow {
     private void simulateWindow(int windowSize) {
         Deque<String> deque = new ArrayDeque<>();
         for (int i = 0; i < windowSize; i++) {
-            deque.offer("a" + i);
+            deque.offer("a" + i); // Add on the right
         }
+        System.out.println(deque);
         while (!deque.isEmpty()) {
-            String elem = deque.removeFirst();
+            String elem = deque.removeFirst(); // Remove from the left
+            System.out.println("Removing element = " + elem);
             System.out.println(deque);
         }
     }
